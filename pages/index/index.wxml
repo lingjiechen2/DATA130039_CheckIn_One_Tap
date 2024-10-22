@@ -1,0 +1,13 @@
+<image src = "../../icon/index.png" class = "homePage" mode = "aspectFill"></image>
+
+<view class = "box">
+  <view class = "buttons">
+    <navigator open-type = "reLaunch" url = "/pages/login/login">
+      <button class = "btn1" style = "width: 320rpx;background-color: #358F83;color: rgb(219, 215, 215);font-size: 17px;" >我是老师</button>
+    </navigator>
+    <navigator open-type = "reLaunch" url = "/pages/login/login">
+      <button class = "btn2" style = "width: 320rpx;background-color: #358F83;color: rgb(219, 215, 215);font-size: 17px;" >我是学生</button>
+    </navigator>
+
+  </view>
+</view>

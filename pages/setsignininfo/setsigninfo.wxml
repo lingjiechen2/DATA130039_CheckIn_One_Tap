@@ -1,0 +1,53 @@
+<!--pages/setsignininfo/setsigninfo.wxml-->
+
+<view class='page-container'>
+  <!--老师选择课程-->
+  <view class="CoursePickerContainer">
+    <text class="course-text">课程：</text>
+    <picker bindchange="CoursePicker" value="{{course_index}}" range="{{courses}}">
+      <view class="course">{{courses[course_index]}}</view>
+    </picker>
+  </view>
+
+  <!--选择签到的日期-->
+  <view class="DayPickerContainer">
+  <text class="day-text">日期：</text>
+    <picker bindchange="DayPicker" value="{{day_index}}" range="{{days}}">
+      <view class="day">{{days[day_index]}}</view>
+    </picker>
+  </view>
+
+  <!--选择签到的时间-->
+  <view class="StartTimePickerContainer">
+    <text class="start-time-text">开始时间：</text>
+    <picker bindchange="StartTimePicker" value="{{start_time_index}}" range="{{start_times}}">
+      <view class="start-time">{{start_times[start_time_index]}}</view>
+    </picker>
+  </view>
+
+  <!--选择签到结束的时间-->
+  <view class="EndTimePickerContainer">
+    <text class='end-time-text'>结束时间：</text>
+    <picker bindchange="EndTimePicker" value="{{end_time_index}}" range="{{end_times}}">
+      <view class="end-time">{{end_times[end_time_index]}}</view>
+    </picker>
+  </view>
+
+  <!--选择签到的位置-->
+<view class="location">
+  <button id="previous" bindtap="choosePreviousLocation" class="{{previous_button_style}}" style="width: 130px; margin-right: 10px;">选择上次位置</button>
+  <button id="new" bindtap="chooseNewLocation" class="{{new_button_style}}" style="width: 130px">选择新位置</button>
+</view>
+
+  <view class="map-container">
+    <map id="myMap" longitude="{{longitude}}" latitude="{{latitude}}" show-location="true" markers="{{markers}}"></map>
+  </view>
+
+  <view class='btn-start'>
+    <button form-type="submit" type='primary' plain
+    bindtap="setsignin">
+      发起签到
+    </button>
+  </view>
+</view>
+

@@ -1,0 +1,67 @@
+/* pages/teacherhomepage/teacherhomepage.wxss */
+
+.circle-button {
+  display: flex; /* 添加此行 */
+  justify-content: center; /* 添加此行 */
+  align-items: center; /* 添加此行 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* 添加此行 */
+  height:180px;
+  position: absolute;
+  left:50%;
+  top:12%;
+  transform: translate(-50%, -20%);
+  background-color: #358f83;
+  color: white;
+  font-size: 24px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer; /* 添加此行 */
+  user-select: none; /* 添加此行 */
+  transition: background-color 0.3s; /* 添加此行 */
+}
+
+.signin-info {
+  background-color:rgb(216, 214, 214);
+  color: rgba(0, 0, 0, 0.678);
+  font-size: 12px;
+  position: absolute;
+  top:55%;
+  width: 100%;
+  left:3%;
+  padding: 10px;
+  padding-top: 0px;
+  border-radius: 3%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.signin-bar
+{
+  color: rgba(0, 0, 0, 0.678);
+  font-size: 14px;
+  position: absolute;
+  top:50%;
+  width: 100%;
+  left:5%; 
+}
+
+.signin-info::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 10px;
+  height: 100%;
+  background-color: #984447;
+}
+
+.signin-bar::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -12px;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #358f83;
+}

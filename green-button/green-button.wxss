@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* 修改此处 */
+  height: 100%;
+}
+
+.circle-button {
+  display: flex; /* 添加此行 */
+  justify-content: center; /* 添加此行 */
+  align-items: center; /* 添加此行 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* 添加此行 */
+  height:180px;
+  position: absolute;
+  left:50%;
+  top:12%;
+  transform: translate(-50%, -20%);
+  background-color: #358f83;
+  color: white;
+  font-size: 24px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer; /* 添加此行 */
+  user-select: none; /* 添加此行 */
+  transition: background-color 0.3s; /* 添加此行 */
+}
+
+.circle-button.clicked {
+  background-color: #984447;
+}
+
+.progress {
+  position: absolute;
+  width: 60%;
+  height: 6%;
+  top:42%;
+  margin-top: 20px; /* 添加此行 */
+  /* background-color: #e0e0e0; */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+

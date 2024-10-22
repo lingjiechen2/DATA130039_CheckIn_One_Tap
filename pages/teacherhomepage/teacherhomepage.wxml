@@ -1,0 +1,26 @@
+<!--pages/teacherhomepage/teacherhomepage.wxml-->
+
+<view>
+  <button form-type="submit" class="circle-button" bindtap="setinfo" >
+    发起签到
+  </button>
+</view>
+
+
+
+<view class="signin-bar">
+  <text>当前签到</text>
+</view>
+
+<view class="signin-info" wx:if="{{isCheckAvailable}}">
+  <text>
+  课程代码：{{checkin.course_id}}
+  课程名称：{{checkin.course_name}}
+  签到日期：{{checkin.day}}
+  地点： {{checkin.latitude}}, {{checkin.longitude}}
+  时间：{{checkin.start_time}} - {{checkin.end_time}}
+  签到状态：未开始
+  签到时间：xxxx</text>
+</view>
+
+

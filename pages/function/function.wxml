@@ -1,0 +1,20 @@
+<!--pages/message/message.wxml-->
+<view class="container">
+  <view class="block" id = "attend" data-type="attend" bindtap="onBlockTap" style="background-color: #358f83">
+    <text>签到记录</text>
+    <iconfont name="jinrujiantou2"></iconfont>
+  </view>
+  <view class="block" id="leave" data-type="leave" bindtap="onBlockTap" style="background-color: #53687E">
+    <text>请假申请</text>
+    <iconfont name="jinrujiantou2"></iconfont>
+  </view>
+  <view class="block" id="message" data-type="message" bindtap="onBlockTap" style="background-color: #A6808C">
+    <text>消息与提醒</text>
+    <iconfont name="jinrujiantou2"></iconfont>
+  </view>
+</view>
+<view style="font-size:12px;position: absolute;top:89%;left:33%;color: #747373">
+<text>
+签到，从未如此简单</text>
+</view>
+

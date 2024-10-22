@@ -1,0 +1,25 @@
+<!--index.wxml-->
+
+<green-button bindtap="CheckSubmit" ></green-button>
+
+<view class="sline">
+</view>
+<view class="signin-bar">
+  <text>当前签到</text>
+</view>
+
+<view class="signin-info" wx:if="{{isCheckAvailable}}">
+  <text>课程名称：{{course}}
+  任务名称：{{task}}
+  地点：{{location}}
+  时间：{{startTime}} - {{endTime}}
+  签到状态：{{status}}
+  签到时间：{{signTime}}</text>
+</view>
+
+<view style="font-size:12px;position: absolute;top:89%;left:33%;color: #747373">
+<text>
+签到，从未如此简单</text>
+</view>
+
+

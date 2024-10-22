@@ -1,0 +1,24 @@
+<!--pages/login/login.wxml-->
+<view>
+<image src="/icon/logo.png" style="width:16%;height: 10%;position: absolute;top: 10%;left:42.5%;"/>
+</view>
+<form name="loginForm" bindsubmit="formSubmit">
+  <view class='title'>
+    统一身份认证
+  </view>
+ 
+  <view class='section' style="position:absolute;top:40%;left:8%;border: 1px solid #BDBDBD;width: 80%;padding:2%;font-size: 14px;border-radius: 2%;">
+    <view class='text' style="color:#424242">
+      请输入账号信息：
+    </view>
+    <input id='ID' name='ID' type='text' placeholder="学/工号" style="color:#BDBDBD"/>
+    <input id='password' name='password' type='text' placeholder="密码" style="color:#BDBDBD"/>
+  </view>
+
+  <view class='button-submit' style="position: absolute;top:60%;left:8%;width:84%">
+    <button form-type="submit" style="width:100%;background-color: #358F83;color:white;">
+      登录
+    </button>
+  </view>
+  
+</form>

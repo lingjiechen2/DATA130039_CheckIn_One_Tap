@@ -1,0 +1,61 @@
+<!--pages/profile/profile.wxml-->
+
+<view class="container">
+  <view class="profile-header">
+    <image src="../../icon/touxiang.jpg" class="avatar" />
+    <view class="profile-info" style="display:flex;flex-direction:column">
+      <text class="name" style="margin-bottom: 10px;">
+      {{name}}
+      </text>
+      <text class="id">ID: {{id}}</text>
+    </view>
+  </view>
+
+  <view class="menu-item" bindtap="personalInfo">
+  <view class="menu-text">
+    <iconfont name="gerenxinxi"></iconfont>
+    个人信息
+    </view>
+    <iconfont name="jinrujiantou"></iconfont>
+  </view>
+
+  <view class="menu-item" bindtap = "myCourse">
+  <view class="menu-text">
+    <iconfont name="kechengbiao"></iconfont>
+  我的课程
+</view>
+<iconfont name="jinrujiantou"></iconfont>
+  </view>
+
+<view class="menu-item" bindtap = "Help">
+<view class="menu-text">
+  <iconfont name="bangzhuzhongxin" ></iconfont>
+  帮助
+  </view>
+  <iconfont name="jinrujiantou"></iconfont>
+  </view>
+
+  <view class="menu-item" bindtap="Setting">
+  <view class="menu-text">
+    <iconfont name="shezhi"></iconfont>
+    设置
+  </view>
+  <iconfont name="jinrujiantou"></iconfont>
+  </view>
+</view>
+
+<view style="font-size:12px;position: absolute;top:89%;left:33%;color: #747373">
+<text>
+签到，从未如此简单</text>
+</view>
+
+
+
+
+<view class='btn-signout'>
+  <navigator open-type="reLaunch" url="/pages/login/login">
+    <button class='signout' type='warn' plain >
+      退出
+    </button>
+  </navigator>
+</view>

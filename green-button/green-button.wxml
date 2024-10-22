@@ -1,0 +1,8 @@
+<view class="container">
+  <button class="circle-button {{clicked ? 'clicked' : ''}}" bindtap="onButtonClick">点击签到</button>
+  <progress hidden="{{!showProgress}}" strokeWidth="32" activeColor="#984447" backgroundColor="gray" percent="{{progress}}" class="progress" />
+</view>
+
+
+
+

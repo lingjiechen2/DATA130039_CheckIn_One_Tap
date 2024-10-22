@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/profile/profile",
+    "pages/function/function",
+    "pages/logs/logs",
+    "pages/userInfo/userInfo",
+    "pages/login/login",
+    "pages/signin/signin",
+    "pages/teacherhomepage/teacherhomepage",
+    "pages/studenthomepage/studenthomepage",
+    "pages/setsignininfo/setsigninfo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "一旦点名",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "iconfont":"/iconfont/iconfont"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        
+        "pagePath": "pages/studenthomepage/studenthomepage",
+        "text": "首页",
+        "iconPath": "icon/首页1.png",
+        "selectedIconPath": "icon/首页2.png"
+      },
+      {
+        
+        "pagePath": "pages/function/function",
+        "text": "消息",
+        "iconPath": "icon/消息1.png",
+        "selectedIconPath": "icon/消息2.png"
+      },
+      {
+        
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "icon/我的1.png",
+        "selectedIconPath": "icon/我的2.png"
+      },
+      {
+        
+        "pagePath": "pages/teacherhomepage/teacherhomepage",
+        "text": "首页",
+        "iconPath": "icon/首页1.png",
+        "selectedIconPath": "icon/首页2.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序定位"
+    }
+  }
+}

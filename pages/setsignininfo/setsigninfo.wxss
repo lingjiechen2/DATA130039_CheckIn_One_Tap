@@ -1,0 +1,168 @@
+/* pages/setsignininfo/setsigninfo.wxss */
+
+.page-container{
+  margin-left: 20rpx;
+  margin-right: 40rpx;
+}
+
+.CoursePickerContainer{
+  display: flex;
+  height: 100rpx;
+  align-items: center;
+}
+
+.course-text{
+  width: 300rpx;
+  margin: 10rpx auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.course{
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10rpx auto;
+  height: 60rpx;
+  width: 500rpx;
+  font-size: 15px;
+  color: #333;
+  padding: 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.DayPickerContainer{
+  display: flex;
+  height: 100rpx;
+  align-items: center;
+}
+
+.day-text{
+  width: 300rpx;
+  margin: 10rpx auto;
+  align-items: center;
+}
+
+.day{
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10rpx auto;
+  height: 60rpx;
+  width: 500rpx;
+  font-size: 15px;
+  color: #333;
+  padding: 0 10px;
+}
+
+.StartTimePickerContainer{
+  display: flex;
+  height: 100rpx;
+  align-items: center;
+}
+
+.start-time-text{
+  width: 300rpx;
+  margin: 10rpx auto;
+  align-items: center;
+}
+
+.start-time{
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10rpx auto;
+  height: 60rpx;
+  width: 500rpx;
+  font-size: 15px;
+  color: #333;
+  padding: 0 10px;
+}
+
+.EndTimePickerContainer{
+  display: flex;
+  height: 100rpx;
+  align-items: center;
+}
+
+.end-time-text{
+  margin: 10rpx auto;
+  align-items: center;
+  width: 300rpx;
+}
+
+.end-time{
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10rpx auto;
+  height: 60rpx;
+  width: 500rpx;
+  font-size: 15px;
+  color: #333;
+  padding: 0 10px;
+}
+
+/*设置地图的大小*/
+.location{
+  display: flex;
+  height: 180rpx;
+  width: 300px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.previous-button{
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 5px;
+  width: 150px;
+  height: 35px;
+}
+
+.previous-button-clicked{
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 5px;
+  width: 150px;
+  height: 35px;
+  color:seagreen;
+  border: 1px solid #ccc;
+}
+
+.new-button{
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 5px;
+  height: 35px;
+  width: 150px;
+}
+
+.new-button-clicked{
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 5px;
+  height: 35px;
+  width: 150px;
+  color:seagreen;
+  border: 1px solid #ccc;
+}
+
+.map-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-start{
+  display: flex;
+  height: 180rpx;
+  justify-content: center;
+  align-items: center;
+}

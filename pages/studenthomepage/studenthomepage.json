@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "green-button": "/green-button/green-button"
+  }
+}
